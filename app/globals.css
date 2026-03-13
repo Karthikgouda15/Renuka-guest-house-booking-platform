@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-hammock-brown-dark text-white font-body;
+  background-image: theme('backgroundImage.sunset-gradient');
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.glass-card {
+  @apply bg-white/10 border border-white/20 backdrop-blur-xl shadow-glass rounded-3xl;
+}
+
+.glass-nav {
+  @apply bg-black/10 border border-white/10 backdrop-blur-xl;
+}
+
+.section-padding {
+  @apply px-4 sm:px-8 lg:px-12 py-16 sm:py-20 lg:py-24;
+}
+
+.max-width {
+  @apply max-w-6xl mx-auto;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-5 py-3 rounded-full bg-hammock-sunset text-white font-semibold shadow-lg shadow-hammock-sunset/40 hover:bg-orange-500 transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center px-5 py-3 rounded-full border border-white/40 bg-white/10 text-white font-semibold hover:bg-white/20 transition-colors duration-200;
+}
+
+.nav-link {
+  @apply text-sm font-medium text-white/80 hover:text-white transition-colors duration-150;
+}
+
+.section-title {
+  @apply font-heading text-3xl sm:text-4xl font-semibold tracking-tight;
+}
+
+.section-subtitle {
+  @apply text-sm uppercase tracking-[0.25em] text-hammock-beige;
+}
+
